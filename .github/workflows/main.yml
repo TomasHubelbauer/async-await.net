@@ -13,7 +13,6 @@ jobs:
       run: |
         set -x
         # Build the CRA application
-        cd src
         npm install
         npm run build
         # Deploy to the application server
