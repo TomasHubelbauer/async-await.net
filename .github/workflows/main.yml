@@ -13,10 +13,9 @@ jobs:
       run: |
         set -x
         # Build the CRA application
-        #npm install
-        #npm run build
-        mkdir build
-        date -Iseconds >> build/index.html
+        cd src
+        npm install
+        npm run build
         # Deploy to the application server
         mkdir ~/.ssh
         touch ~/.ssh/known_hosts
