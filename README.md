@@ -15,3 +15,6 @@ npm start
 
 GitHub Actions continuous delivery is set up in
 [`main.yml`](.github/workflows/mail.yml).
+
+The deployment pipeline is at
+https://github.com/TomasHubelbauer/async-await.net/actions
