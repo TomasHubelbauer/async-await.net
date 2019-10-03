@@ -18,4 +18,4 @@ jobs:
         mkdir build
         date -Iseconds >> build/index.html
         # Deploy to the application server
-        rsync -avh build/ root@172.104.251.140/var/www/async-await.net --delete
+        sshpass -p "{{ secrets.SSH_PASSWORD }}" rsync -avh build/ root@172.104.251.140:/var/www/async-await.net --delete
