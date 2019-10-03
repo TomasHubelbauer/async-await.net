@@ -1,0 +1,21 @@
+name: cd
+on:
+  push:
+    branches:
+    # Limit to the `master` branch
+    - master
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Generate GitHub Pages
+      run: |
+        set -x
+        # Build the CRA application
+        #npm install
+        #npm run build
+        mkdir build
+        date -Iseconds >> build/index.html
+        # Deploy to the application server
+        rsync -avh build/ root@172.104.251.140/var/www/async-await.net --delete
