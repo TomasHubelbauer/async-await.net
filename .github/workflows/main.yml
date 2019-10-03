@@ -18,5 +18,6 @@ jobs:
         mkdir build
         date -Iseconds >> build/index.html
         # Deploy to the application server
+        touch ~/.ssh/known_hosts
         ssh-keyscan 172.104.251.140 >> ~/.ssh/known_hosts
         sshpass -p "{{ secrets.SSH_PASSWORD }}" rsync -avh build/ root@172.104.251.140:/var/www/async-await.net --delete
