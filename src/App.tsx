@@ -5,8 +5,9 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        async-await.net
+        <h1>async-await.net</h1>
       </header>
+      <p>Welcome to async-await.net!</p>
     </div>
   );
 };
