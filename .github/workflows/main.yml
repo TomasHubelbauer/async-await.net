@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Generate GitHub Pages
+    - name: Build and deploy
       run: |
         set -x
         # Build the CRA application
@@ -18,4 +18,5 @@ jobs:
         mkdir build
         date -Iseconds >> build/index.html
         # Deploy to the application server
+        ssh-keyscan 172.104.251.140 >> ~/.ssh/known_hosts
         sshpass -p "{{ secrets.SSH_PASSWORD }}" rsync -avh build/ root@172.104.251.140:/var/www/async-await.net --delete
