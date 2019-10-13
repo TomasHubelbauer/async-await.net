@@ -1,9 +1,21 @@
-.App {
+body {
+  background: #282c34;
+  color: white;
+  font: normal 12pt sans-serif;
+}
+
+#root {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.App-header {
-  color: white;
+a {
+  align-items: center;
+  color: inherit;
+  display: flex;
+}
+
+a img {
+  margin-right: 1ex;
 }
