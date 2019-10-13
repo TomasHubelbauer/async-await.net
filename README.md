@@ -8,7 +8,6 @@ application build and places the artifacts onto an application server using SSH.
 ## Running
 
 ```sh
-cd src
 npm install
 npm start
 ```
