@@ -1,4 +1,4 @@
-# [async-await.net](http://async-await.net)
+# [async-await.net](https://async-await.net)
 
 ![](https://github.com/tomashubelbauer/async-await.net/workflows/cd/badge.svg)
 
