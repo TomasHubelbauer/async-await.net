@@ -19,3 +19,10 @@ GitHub Actions continuous delivery is set up in
 
 The deployment pipeline is at
 https://github.com/TomasHubelbauer/async-await.net/actions
+
+## To-Do
+
+### Link the apps automatically
+
+Have a GitHub Actions workflow which looks for my other repos with an async-await.net
+topic and add them to the index of the available apps here.
