@@ -9,8 +9,15 @@ application build and places the artifacts onto an application server using SSH.
 
 ```sh
 npm install
+npm run refresh-apps
 npm start
 ```
+
+## Development
+
+The `github-api` dependency of the `cmd/refresh-apps` script is a Git dependency
+so updating it is a bit tricky. I find the quickest way to do it is to just wipe
+`node_modules` and re-run `npm install`.
 
 ## Deployment
 
@@ -22,8 +29,12 @@ https://github.com/TomasHubelbauer/async-await.net/actions
 
 ## To-Do
 
-### Pass the GitHub integration PAT to the refresh-apps command for rate limit
+### Add a rate-limit reporting hook to `github-api` and use it here to print it
 
-### Use the GitHub API library for the paged repo fetch call
+### Verify the integration PAT is being passed to the script in the workflow
 
-### Dump the repos found to the index using their name or homepage of specified
+### Use `apps.json` if it exists to generate the app listing
+
+Probably best will be to use a dynamic import and rely on `apps.json` getting
+created in the workflow so always existing in the workflow. Need to place it to
+`public` in the workflow tho.

@@ -1,7 +1,9 @@
 {
   "name": "refresh-apps",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "fs-extra": "^8.1.0",
-    "node-fetch": "^2.6.0"
+    "github-api": "git+https://github.com/TomasHubelbauer/github-api.git"
   }
 }
