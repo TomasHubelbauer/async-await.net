@@ -22,7 +22,8 @@ https://github.com/TomasHubelbauer/async-await.net/actions
 
 ## To-Do
 
-### Link the apps automatically
+### Pass the GitHub integration PAT to the refresh-apps command for rate limit
 
-Have a GitHub Actions workflow which looks for my other repos with an async-await.net
-topic and add them to the index of the available apps here.
+### Use the GitHub API library for the paged repo fetch call
+
+### Dump the repos found to the index using their name or homepage of specified

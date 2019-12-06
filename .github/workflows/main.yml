@@ -12,8 +12,11 @@ jobs:
     - name: Build and deploy
       run: |
         set -x
-        # Build the CRA application
+        # Install the dependencies of the CRA application and tooling
         npm install
+        # Refresh the list of application links to other repositories
+        npm run refresh-apps
+        # Build the CRA application with the refreshed application index
         npm run build
         # Deploy to the application server
         mkdir ~/.ssh
