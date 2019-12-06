@@ -15,6 +15,9 @@ jobs:
         # Install the dependencies of the CRA application and tooling
         npm install
         # Refresh the list of application links to other repositories
+        cd cmd/refresh-apps
+        npm install
+        cd ../..
         node cmd/refresh-apps ${{github.GITHUB_TOKEN}} > apps.json
         cat apps.json
         # Build the CRA application with the refreshed application index
