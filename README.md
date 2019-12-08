@@ -26,15 +26,3 @@ GitHub Actions continuous delivery is set up in
 
 The deployment pipeline is at
 https://github.com/TomasHubelbauer/async-await.net/actions
-
-## To-Do
-
-### Add a rate-limit reporting hook to `github-api` and use it here to print it
-
-### Verify the integration PAT is being passed to the script in the workflow
-
-### Use `apps.json` if it exists to generate the app listing
-
-Probably best will be to use a dynamic import and rely on `apps.json` getting
-created in the workflow so always existing in the workflow. Need to place it to
-`public` in the workflow tho.
