@@ -18,7 +18,7 @@ jobs:
         cd cmd/refresh-apps
         npm install
         cd ../..
-        node cmd/refresh-apps ${{secrets.GITHUB_TOKEN}} > apps.json
+        node cmd/refresh-apps ${{secrets.GITHUB_TOKEN}}
         cat apps.json
         # Build the CRA application with the refreshed application index
         npm run build
