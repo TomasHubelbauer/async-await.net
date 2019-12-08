@@ -12,7 +12,7 @@ void async function () {
     }
   }
 
-  await fs.writeJson('public/apps.json', apps, { spaces: 2 });
+  await fs.writeJson('src/apps.json', apps, { spaces: 2 });
 }()
 
 function onPageChange({ page, total, url, attempt }) {
