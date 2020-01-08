@@ -28,3 +28,5 @@ The deployment pipeline is at
 https://github.com/TomasHubelbauer/async-await.net/actions
 
 ## To-Do
+
+### Host again and update the deployment
