@@ -1,5 +1,15 @@
 # [async-await.net](https://async-await.net)
 
+## 2021-04-23 Friday
+
+### Today in *Software Disappoinment*
+
+Spotify is a poor quality piece of software overall, but it has hit a new low
+today when instead of allowing me to see my currently playing playlist, it told
+me to look for something else! Thanks for the advice, Spotify.
+
+![](2021-04-23-spotify.png)
+
 ## 2021-04-22 Thursday
 
 ### Node 16 with top-level `await` (TLA) and asynchronous timers is out!
