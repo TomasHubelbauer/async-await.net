@@ -11,3 +11,8 @@
 ![](https://github.com/tomashubelbauer/async-await.net/workflows/async-await.cz-redirect/badge.svg)
 
 ## To-Do
+
+### Wait for the DNS record propagation and async-await.cz redirection to work
+
+Seems like AAAA have already propagated and the associated pipeline is already
+passing, but A and the .CZ redirect are still red.
