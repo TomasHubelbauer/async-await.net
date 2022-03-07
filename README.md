@@ -12,6 +12,12 @@
 
 ## To-Do
 
+### Set up a content page instead of using the readme for GitHub Pages
+
+The default MarkDown rendering on GitHub Pages is not beautiful, it will be
+better to set up a proper landing page with a plain `h1` tag for maximal
+aesthetics!
+
 ### Wait for the async-await.cz redirection to work
 
 The domain name is newly associated so it is going to take a while for it to be
