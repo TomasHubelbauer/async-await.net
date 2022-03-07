@@ -12,7 +12,7 @@
 
 ## To-Do
 
-### Wait for the DNS record propagation and async-await.cz redirection to work
+### Wait for the async-await.cz redirection to work
 
-Seems like AAAA have already propagated and the associated pipeline is already
-passing, but A and the .CZ redirect are still red.
+The domain name is newly associated so it is going to take a while for it to be
+reachable and for the redirect to have been set up by the registrar.
